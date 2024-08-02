@@ -1,13 +1,10 @@
 import { useState } from "react"
 import axios from "axios"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
-import Notification from "./Notification"
 import Swal from "sweetalert2"
 
 const OfferReq = () => {
   const [validated, setValidated] = useState(false)
-  const [message, setMessage] = useState(null)
-  const [errorMessage, setErrorMessage] = useState(null)
   const [formData, setFormData] = useState({
     yksityinen: true,
     nimi: "",
@@ -109,7 +106,6 @@ const OfferReq = () => {
       <Row xs={1} md={2} lg={3}>
         <Col md={8} lg={8}>
           <h2 className="headerStyle">Tarjouspyyntö</h2>
-          <Notification message={message} errorMessage={errorMessage} />
           <Form
             noValidate
             validated={validated}

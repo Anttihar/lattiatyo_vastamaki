@@ -1,4 +1,4 @@
-import { Container, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 const Contact = () => {
   return (
