@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.headerStyle {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.mainRow {
+  height: 500px;
+}
+
+#mainImg {
+  display: grid;
+  margin-bottom: 2rem;
+  background-image: url(./assets/images/main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainTitle {
+  display: grid;
+  margin-top: 9rem;
+  margin-left: 4%;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  color: light-grey;
+}
+
+#mainText {
+  display: grid;
+  max-width: 750px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+}
+
+.borderBottom {
+  border-bottom: solid 1px;
+  border-block-end-color: grey;
+  margin-bottom: 2.5rem;
+}
+
+#nappiTarjouspyyntoon {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 3rem;
+  width: 15rem;
+  font-size: 1.25rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.centered {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.images {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.navLinks {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+}
+
+#phone {
+  font-weight: 400;
+}
+
+#offcancas-body {
+  display: grid;
+  justify-content: space-between;
+}
+
+.tarjouspyynto {
+  margin-top: 5rem;
+}
+
+.tarjous-yht {
+  position: fixed;
+  right: 1;
+}
+
+.swal-modal {
+  background-color: green;
+}
