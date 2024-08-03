@@ -37,7 +37,6 @@ const Home = () => {
             as={Link}
             to="/tarjouspyynto"
             id="nappiTarjouspyyntoon"
-            variant="warning"
             onClick={() => console.log('tarjouspyyntö klikattu')}
           >
             Kysy tarjous!
@@ -47,12 +46,12 @@ const Home = () => {
           <Services />
         </Row>
         <Row id="kuvat" className="borderBottom">
-          <h2 className="headerStyle mb-5">Kuvia kohteistamme</h2>
-          <Row xs={1} lg={2} className="mb-3 d-flex justify-content-center align-items-center">
+          <Row xs={1} lg={2} className="mb-3 d-flex justify-content-center">
             <Col lg={8} xl={7}>
+              <h2 className="headerStyle">Kuvia kohteistamme</h2>
               <ImageSlider />
             </Col>
-            <Col lg={4} xl={4}>
+            <Col lg={4} xl={4} className="mt-2">
               <InstaWidget />
             </Col>
           </Row>

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -22,6 +22,10 @@ const OfferReq = () => {
     viesti: "",
     liite: null
   })
+
+  useEffect(() => {
+    window.scroll(top)
+  },[])
 
   const form = new FormData()
   form.append('yksityinen', formData.yksityinen)
@@ -102,7 +106,7 @@ const OfferReq = () => {
   }
 
   return (
-    <Container className="tarjouspyynto">
+    <Container id="tarjouspyynto">
       <Row xs={1} md={2} lg={3}>
         <Col md={8} lg={8}>
           <h2 className="headerStyle">Tarjouspyyntö</h2>
@@ -342,17 +346,19 @@ const OfferReq = () => {
           </Form>
         </Col>
         <Col md={4} lg={4} className="d-flex justify-content-center mt-5">
-          <div className="tarjous-yht">
+          <div className="position-fixed">
             <h3 className="headerStyle">Yhteystiedot</h3>
-            <p style={{ textAlign: "center" }}>
-              Tommi Vastamäki <br />
-              Puh. 040 7218470 <br />
-              lattiatyovastamaki@gmail.com
-            </p>
-            <p style={{ textAlign: "center" }}>
-              Lattiatyö Vastamäki Oy <br />
-              Y-tunnus 3365082-7
-            </p>
+            <div id="tarjous-yht-text">
+              <p>
+                Tommi Vastamäki <br />
+                Puh. 040 7218470 <br />
+                lattiatyovastamaki@gmail.com
+              </p>
+              <p>
+                Lattiatyö Vastamäki Oy <br />
+                Y-tunnus 3365082-7
+              </p>
+            </div>
           </div>
         </Col>
       </Row>

@@ -55,6 +55,9 @@ html {
   width: 15rem;
   font-size: 1.25rem;
   font-family: "Kanit", sans-serif;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: black;
 }
 
 .centered {
@@ -69,6 +72,7 @@ html {
 .images {
   display: grid;
   justify-items: center;
+  margin-top: 5%;
   margin-bottom: 2rem;
 }
 
@@ -87,13 +91,16 @@ html {
   justify-content: space-between;
 }
 
-.tarjouspyynto {
+#tarjouspyynto {
   margin-top: 5rem;
 }
 
-.tarjous-yht {
-  position: fixed;
-  right: 1;
+#tarjous-yht-text {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
 }
 
 .swal-modal {
