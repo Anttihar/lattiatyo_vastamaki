@@ -8,6 +8,7 @@ const hbs = require('nodemailer-express-handlebars')
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use(express.static('dist'))
 app.use(express.urlencoded({ extended: true }))
 
 const PORT  = process.env.PORT || 3001
