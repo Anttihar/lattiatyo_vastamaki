@@ -67,7 +67,7 @@ const OfferReq = () => {
       event.preventDefault()
 
       try {
-        await axios.post("http://localhost:3001/api/send", form)
+        await axios.post("/api/send", form)
           .then(res => {
             console.log('viesti lähetetty', res)
             Swal.fire({
@@ -325,7 +325,7 @@ const OfferReq = () => {
                   name="liite"
                   id="liite"
                   onChange={(e) => setFormData({ ...formData, liite: e.target.files[0] })}
-                  accept=".pdf,.jpg,.jpeg,.png"
+                  accept=".pdf"
                 />
                 <Form.Text>Sallittu tiedostomuoto: pdf</Form.Text>
               </Form.Group>
