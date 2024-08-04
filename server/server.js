@@ -4,6 +4,7 @@ const multer = require('multer')
 const nodemailer = require('nodemailer')
 const cors = require('cors')
 const hbs = require('nodemailer-express-handlebars')
+const path = require('path')
 
 const app = express()
 app.use(cors())
@@ -31,6 +32,15 @@ const hbsOptions = {
 }
 
 transporter.use('compile', hbs(hbsOptions))
+
+app.get('/*', function(req, res) {
+  console.log("dirname: ",__dirname)
+  res.sendFile(path.join(__dirname, 'dist/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
 
 app.post("/api/send", upload.single("liite"), (req, res) => {
   const content = req.body
