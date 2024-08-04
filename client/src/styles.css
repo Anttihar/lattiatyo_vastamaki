@@ -5,18 +5,31 @@ html {
 .headerStyle {
   display: grid;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-family: "Kanit", sans-serif;
 }
 
+.centered {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+}
+
 .mainRow {
+  width: auto;
   height: 500px;
 }
 
 #mainImg {
   display: grid;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 2rem;
   background-image: url(./assets/images/main.jpg);
+  width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,22 +37,25 @@ html {
 
 #mainTitle {
   display: grid;
-  margin-top: 9rem;
-  margin-left: 4%;
-  font-family: "Kanit", sans-serif;
-  font-size: 2.5rem;
+  margin-top: 12rem;
+  margin-left: 3%;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
   color: light-grey;
 }
 
 #mainText {
-  display: grid;
+  display: flex;
   max-width: 750px;
   margin-bottom: 2rem;
   letter-spacing: 0.1rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-family: "Kanit", sans-serif;
   font-weight: 200;
+  font-optical-sizing: auto;
 }
 
 .borderBottom {
@@ -60,20 +76,19 @@ html {
   color: black;
 }
 
-.centered {
+.img-container {
   display: grid;
   justify-content: center;
   margin-bottom: 2rem;
-  font-family: "Kanit", sans-serif;
-  font-weight: 200;
-  font-size: 1.25rem;
 }
 
-.images {
-  display: grid;
-  justify-items: center;
-  margin-top: 5%;
-  margin-bottom: 2rem;
+#karuselli {
+  max-width: 600px;
+}
+
+.imagee {
+  max-width: 100%;
+  height: auto;
 }
 
 .navLinks {

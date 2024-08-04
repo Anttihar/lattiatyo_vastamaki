@@ -26,7 +26,7 @@ const Navigation = () => {
                 <Nav.Link as={Link} to="/#yhteystiedot" eventKey={5}>Yhteystiedot</Nav.Link>
                 <Nav.Link
                   href="tel:0401883553"
-                  id="phone"
+                  style={{ fontWeight: "400", marginLeft: "2rem" }}
                 >
                   <LuPhoneCall style={{ color: "green" }} /> 040 7218470
                 </Nav.Link>

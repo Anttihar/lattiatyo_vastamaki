@@ -3,23 +3,24 @@ import Contact from "./Contact"
 import Services from "./Services"
 import { Link } from "react-router-dom"
 import ImageSlider from "./ImageSlider"
-import InstaWidget from "./InstaWidget"
-
+import instaIcon from "../assets/icons/instagram.png"
+import lkIcon from "../assets/icons/luotettava_kumppani.png"
+// Betonilattiavalujen<br />jämäkkä<br />ammattilainen BETONILATTIAVALUJEN<br />JÄMÄKKÄ<br />AMMATTILAINEN
 const Home = () => {
   return (
-    <Container className="d-grid justify-content-center mt-5">
+    <Container className=" mt-5">
       <Col>
         <Row id="home" className="mainRow">
           <div id="mainImg">
-            <h2 id="mainTitle">Betonilattiavalujen<br />jämäkkä<br />ammattilainen</h2>
+            <h2 id="mainTitle">BETONILATTIAVALUJEN<br />JÄMÄKKÄ<br />AMMATTILAINEN</h2>
           </div>
         </Row>
 
         <Row className="d-grid justify-content-center">
           <Stack gap={0.5} id="mainText">
             <p>
-              Toteutamme kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille kuin yksityisille. <br />
-              Toimialueemme on Pirkanmaa, mutta olemme vierailleet myös ympäröivissä maakunnissa.
+              Toteutamme kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille kuin yksityisille.
+              Pääasiallinen toimialueemme on Pirkanmaa, mutta olemme vierailleet myös ympäröivissä maakunnissa.
             </p>
             <p>
               Toimintaamme on aina ohjannut suuri ammattiylpeys,
@@ -45,19 +46,35 @@ const Home = () => {
         <Row id="palvelut" className="borderBottom">
           <Services />
         </Row>
-        <Row id="kuvat" className="borderBottom">
-          <Row xs={1} lg={2} className="mb-3 d-flex justify-content-center">
-            <Col lg={8} xl={7}>
-              <h2 className="headerStyle">Kuvia kohteistamme</h2>
-              <ImageSlider />
-            </Col>
-            <Col lg={4} xl={4} className="mt-2">
-              <InstaWidget />
-            </Col>
-          </Row>
+        <Row id="kuvat">
+          <ImageSlider />
         </Row>
         <Row id="yhteystiedot">
-          <Contact />
+          <Col className="mt-4">
+            <h2 className="headerStyle">Yhteystiedot</h2>
+            <Row xs={1} sm={2} lg={3} className="d-flex justify-content-center">
+              <Col className="d-grid justify-content-center align-items-center mb-4 order-3 sm-order-3">
+                <div className="d-grid">
+                  <h5 style={{ fontWeight: "300" }} className="headerStyle mb-3">Seuraa meitä Instagramissa!</h5>
+                  <div className="d-grid justify-content-center">
+                    <a href="https://www.instagram.com/lattiatyovastamaki/">
+                      <img src={instaIcon} width={50}></img>
+                    </a>
+                  </div>
+                </div>
+              </Col>
+              <Col className="d-grid justify-content-center align-items-center order-1 sm-order-2">
+                <Contact />
+              </Col>
+              <Col className="d-grid justify-content-center align-items-center mb-4 order-2 sm-order-1">
+                <div className="">
+                  <a href="https://bol.vastuugroup.fi/#/search/FIN%2F3365082-7">
+                    <img src={lkIcon} width={175} />
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </Col>
     </Container>

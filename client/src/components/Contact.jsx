@@ -3,7 +3,6 @@ import { Container } from "react-bootstrap"
 const Contact = () => {
   return (
     <Container className="centered">
-      <h2 className="headerStyle">Yhteystiedot</h2>
       <p style={{ textAlign: "center" }}>
         Tommi Vastamäki <br />
         Puh. 040 7218470 <br />
