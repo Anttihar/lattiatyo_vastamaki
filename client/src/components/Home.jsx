@@ -19,8 +19,10 @@ const Home = () => {
         <Row className="d-grid justify-content-center">
           <Stack gap={0.5} id="mainText">
             <p>
-              Toteutamme kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille kuin yksityisille.
-              Pääasiallinen toimialueemme on Pirkanmaa, mutta olemme vierailleet myös ympäröivissä maakunnissa.
+              Toteutamme kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille
+              kuin yksityisille.<br />
+              Pääasiallinen toimialueemme on Pirkanmaa, mutta olemme vierailleet myös
+              ympäröivissä maakunnissa.
             </p>
             <p>
               Toimintaamme on aina ohjannut suuri ammattiylpeys,
