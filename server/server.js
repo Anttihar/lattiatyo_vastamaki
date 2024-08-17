@@ -35,7 +35,7 @@ transporter.use('compile', hbs(hbsOptions))
 
 app.get('/*', function(req, res) {
   console.log("dirname: ",__dirname)
-  res.sendFile(path.join(__dirname, 'dist/index.html'), function(err) {
+  res.sendFile(path.join(__dirname, 'dist/index.html'), (err) => {
     if (err) {
       res.status(500).send(err)
     }
