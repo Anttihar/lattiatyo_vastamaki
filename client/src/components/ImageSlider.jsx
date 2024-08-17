@@ -1,6 +1,6 @@
 import { Carousel, Container, Col } from "react-bootstrap"
-import img1 from "../assets/images/img1.jpg"
-import img2 from "../assets/images/img2.jpg"
+import lattiavalu1 from "../assets/images/lattiavalu_1.jpg"
+import lattiavalu2 from "../assets/images/lattiavalu_2.jpg"
 
 const ImageSlider = () => {
   return (
@@ -9,10 +9,10 @@ const ImageSlider = () => {
         <h2 className="headerStyle">Kuvia kohteistamme</h2>
         <Carousel id="karuselli" fade interval={5000}>
           <Carousel.Item>
-            <img className="imagee" src={img1} />
+            <img className="imagee" src={lattiavalu1} alt="OKT lattiavalu levitys"/>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="imagee" src={img2} />
+            <img className="imagee" src={lattiavalu2} alt="OKT lattiavalu hiertopinnalla" />
           </Carousel.Item>
         </Carousel>
       </Container>

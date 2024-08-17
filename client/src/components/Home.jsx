@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import ImageSlider from "./ImageSlider"
 import instaIcon from "../assets/icons/instagram.png"
 import lkIcon from "../assets/icons/luotettava_kumppani.png"
-// Betonilattiavalujen<br />jämäkkä<br />ammattilainen BETONILATTIAVALUJEN<br />JÄMÄKKÄ<br />AMMATTILAINEN
+
 const Home = () => {
   return (
     <Container className=" mt-5">
@@ -59,7 +59,11 @@ const Home = () => {
                 <div className="d-grid">
                   <h5 style={{ fontWeight: "300" }} className="headerStyle mb-3">Seuraa meitä Instagramissa!</h5>
                   <div className="d-grid justify-content-center">
-                    <a href="https://www.instagram.com/lattiatyovastamaki/">
+                    <a
+                      href="https://www.instagram.com/lattiatyovastamaki/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src={instaIcon} width={50}></img>
                     </a>
                   </div>
@@ -70,7 +74,11 @@ const Home = () => {
               </Col>
               <Col className="d-grid justify-content-center align-items-center mb-4 order-2 sm-order-1">
                 <div className="">
-                  <a href="https://bol.vastuugroup.fi/#/search/FIN%2F3365082-7">
+                  <a
+                    href="https://bol.vastuugroup.fi/#/search/FIN%2F3365082-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={lkIcon} width={175} />
                   </a>
                 </div>
