@@ -3,12 +3,10 @@ import Contact from "./Contact"
 import Services from "./Services"
 import { Link } from "react-router-dom"
 import ImageSlider from "./ImageSlider"
-import instaIcon from "../assets/icons/instagram.png"
-import lkIcon from "../assets/icons/luotettava_kumppani.png"
 
 const Home = () => {
   return (
-    <Container className=" mt-5">
+    <Container className="mt-5">
       <Col>
         <Row id="home" className="mainRow">
           <div id="mainImg">
@@ -19,7 +17,7 @@ const Home = () => {
         <Row className="d-grid justify-content-center">
           <Stack gap={0.5} id="mainText">
             <p>
-              Toteutamme kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille
+              Lattiatyö Vastamäki toteuttaa kaikenlaiset lattiavalut vuosien kokemuksella niin yrityksille
               kuin yksityisille.<br />
               Pääasiallinen toimialueemme on Pirkanmaa, mutta olemme vierailleet myös
               ympäröivissä maakunnissa.
@@ -55,7 +53,26 @@ const Home = () => {
           <Col className="mt-4">
             <h2 className="headerStyle">Yhteystiedot</h2>
             <Row xs={1} sm={2} lg={3} className="d-flex justify-content-center">
-              <Col className="d-grid justify-content-center align-items-center mb-4 order-3 sm-order-3">
+              <Col className="d-grid justify-content-center align-items-center">
+                <Contact />
+              </Col>
+              <Col className="d-grid justify-content-center align-items-center mb-4">
+                <div className="">
+                  <a
+                    href="https://bol.vastuugroup.fi/#/search/FIN%2F3365082-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/luotettava_kumppani.png"
+                      alt="Linkki tilaajavastuu raporttiin"
+                      width={175}
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </Col>
+              <Col className="d-grid justify-content-center align-items-center mb-4">
                 <div className="d-grid">
                   <h5 style={{ fontWeight: "300" }} className="headerStyle mb-3">Seuraa meitä Instagramissa!</h5>
                   <div className="d-grid justify-content-center">
@@ -64,23 +81,14 @@ const Home = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={instaIcon} width={50}></img>
+                      <img
+                        src="/instagram.webp"
+                        alt="Linkki instagramiin"
+                        width={50}
+                        loading="lazy"
+                      />
                     </a>
                   </div>
-                </div>
-              </Col>
-              <Col className="d-grid justify-content-center align-items-center order-1 sm-order-2">
-                <Contact />
-              </Col>
-              <Col className="d-grid justify-content-center align-items-center mb-4 order-2 sm-order-1">
-                <div className="">
-                  <a
-                    href="https://bol.vastuugroup.fi/#/search/FIN%2F3365082-7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={lkIcon} width={175} />
-                  </a>
                 </div>
               </Col>
             </Row>

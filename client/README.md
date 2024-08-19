@@ -1,1 +1,1 @@
-Lattiatyö Vastamäki Oy webpage
+Lattiatyö Vastamäki Oy webpage frontend

@@ -10,13 +10,13 @@ const Services = () => {
           <h4 style={{ fontWeight: "300" }}>
             <GiCheckMark style={{ color: "DAA520" }} /> Betonilattiavalut
           </h4>
-          <dl style={{ marginLeft: "2rem", marginBottom: "2rem" }}>
+          <ul style={{ marginLeft: "2rem", marginBottom: "2rem" }}>
             <li>Maanvaraiset lattiat</li>
             <li>Pintalaattojen valut</li>
             <li>Holvivalut</li>
             <li>Kaatovalut</li>
             <li>Kuivasirotepinnoitteet</li>
-          </dl>
+          </ul>
           <h4 style={{ fontWeight: "300" }}>
             <GiCheckMark style={{ color: "DAA520" }} /> Kevyet sementtiliiman hionnat
           </h4>
