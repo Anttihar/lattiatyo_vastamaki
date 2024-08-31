@@ -50,8 +50,8 @@ app.post("/api/send", upload.single("liite"), (req, res) => {
   
   const mailOptions = {
     from: "antti.harra@gmail.com",
-    to: "tarjouspyynnotvastamaki@gmail.com",
-    subject: "Tarjouspyyntö",
+    to: "lattiatyovastamaki@gmail.com",
+    subject: "Tarjouspyyntö verkkosivuilta",
     template: 'formEmail',
     context: {
       status: content.yksityinen === 'true'
