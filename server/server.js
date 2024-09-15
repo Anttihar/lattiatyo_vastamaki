@@ -49,7 +49,7 @@ app.post("/api/send", upload.single("liite"), (req, res) => {
   console.log('data: ', content)
   
   const mailOptions = {
-    from: "antti.harra@gmail.com",
+    from: "tarjouspyynnotvastamaki@gmail.com",
     to: "lattiatyovastamaki@gmail.com",
     subject: "Tarjouspyyntö verkkosivuilta",
     template: 'formEmail',
