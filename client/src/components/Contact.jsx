@@ -10,7 +10,9 @@ const Contact = () => {
       </p>
       <p style={{ textAlign: "center" }}>
         Lattiatyö Vastamäki Oy <br />
-        Y-tunnus 3365082-7
+        Y-tunnus 3365082-7 <br />
+        Etu-Hankkionkatu 8 B20<br />
+        33700 Tampere
       </p>
     </Container>
   )

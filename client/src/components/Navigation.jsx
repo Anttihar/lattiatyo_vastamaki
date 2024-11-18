@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <div className="d-flex justify-content-center">
       <Navbar collapseOnSelect fixed="top" expand="lg" className="bg-body-tertiary">
-        <Container>
+        <Container style={{ margin: "auto" }}>
           <Navbar.Brand href="/">LATTIATYÖ VASTAMÄKI</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
@@ -17,7 +17,7 @@ const Navigation = () => {
             restoreFocus={false}
           >
             <Offcanvas.Header className="justify-content-end" closeButton />
-            <Offcanvas.Body id="offcancas-body">
+            <Offcanvas.Body>
               <Nav className="navLinks">
                 <Nav.Link as={Link} to="/" eventKey={1}>Etusivu</Nav.Link>
                 <Nav.Link as={Link} to="/#palvelut" eventKey={2}>Palvelut</Nav.Link>
@@ -25,8 +25,8 @@ const Navigation = () => {
                 <Nav.Link as={Link} to="/tarjouspyynto" eventKey={4}>Tarjouspyyntö</Nav.Link>
                 <Nav.Link as={Link} to="/#yhteystiedot" eventKey={5}>Yhteystiedot</Nav.Link>
                 <Nav.Link
-                  href="tel:0401883553"
-                  style={{ fontWeight: "400", marginLeft: "1rem" }}
+                  href="tel:+358407218470"
+                  style={{ fontWeight: "300" }}
                 >
                   <LuPhoneCall style={{ color: "green" }} /> 040 7218470
                 </Nav.Link>

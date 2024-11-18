@@ -44,8 +44,6 @@ const OfferReq = () => {
   form.append('viesti', formData.viesti)
   form.append('liite', formData.liite)
 
-  console.log(formData)
-
   const handleValidation = (event) => {
     const form = event.currentTarget
     if (form.checkValidity() === false) {
@@ -105,11 +103,21 @@ const OfferReq = () => {
     setFormData({ ...formData, [name]: value })
   }
 
+  const textStyle = {
+    fontFamily: "Kanit, sans-serif",
+    fontWeight: 200,
+    fontSize: "0.9rem"
+  }
+
   return (
     <Container id="tarjouspyynto">
       <Row xs={1} md={2} lg={3}>
         <Col md={8} lg={8}>
           <h2 className="headerStyle">Tarjouspyyntö</h2>
+          <p style={textStyle}>
+            Annathan mahdollisimman paljon tietoja kohteesta <br />
+            Pakolliset kentät merkitty (*)
+          </p>
           <Form
             noValidate
             validated={validated}
@@ -120,7 +128,6 @@ const OfferReq = () => {
             <Form.Group>
               <Form.Check
                 inline
-                required
                 type="radio"
                 label="Yksityinen"
                 name="yksityinen"
@@ -129,7 +136,6 @@ const OfferReq = () => {
               />
               <Form.Check
                 inline
-                required
                 type="radio"
                 label="Yritys"
                 name="yksityinen"
@@ -140,7 +146,7 @@ const OfferReq = () => {
             </Form.Group>
             <Row className="mt-2 mb-2" xs={1} sm={2}>
               <Form.Group className="mb-2" as={Col}>
-                <Form.Label htmlFor="nimi">Nimi</Form.Label>
+                <Form.Label htmlFor="nimi">Nimi *</Form.Label>
                 <Form.Control
                   required
                   type="text"
@@ -169,7 +175,7 @@ const OfferReq = () => {
             </Row>
             <Row className="mb-2" xs={1} sm={2}>
               <Form.Group className="mb-2" as={Col}>
-                <Form.Label htmlFor="puhelin">Puhelinnumero</Form.Label>
+                <Form.Label htmlFor="puhelin">Puhelinnumero *</Form.Label>
                 <Form.Control
                   required
                   type="text"
@@ -182,7 +188,7 @@ const OfferReq = () => {
                 />
               </Form.Group>
               <Form.Group as={Col}>
-                <Form.Label htmlFor="email">Sähköposti</Form.Label>
+                <Form.Label htmlFor="email">Sähköposti *</Form.Label>
                 <Form.Control
                   required
                   type="email"
@@ -197,14 +203,14 @@ const OfferReq = () => {
             </Row>
             <Row className="mb-2" sm={1} lg={2}>
               <Form.Group className="mb-2" as={Col}>
-                <Form.Label htmlFor="osoite">Kohteen osoite</Form.Label>
+                <Form.Label htmlFor="osoite">Kohteen katuosoite ja paikkakunta *</Form.Label>
                 <Form.Control
                   required
                   type="text"
                   name="osoite"
                   id="osoite"
                   size="sm"
-                  placeholder="Kohteen osoite"
+                  placeholder="Kohteen katuosoite ja paikkakunta"
                   value={formData.osoite}
                   onChange={handleChange}
                 />
@@ -339,7 +345,8 @@ const OfferReq = () => {
               className="mb-4"
               type="submit"
               name="buttonForm"
-              id="buttonForm"
+              id="button"
+              style={{ fontWeight: 300 }}
             >
               Lähetä tarjouspyyntö
             </Button>
