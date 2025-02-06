@@ -1,10 +1,10 @@
-require('dotenv').config()
-const express = require('express')
-const multer = require('multer')
-const nodemailer = require('nodemailer')
-const cors = require('cors')
-const hbs = require('nodemailer-express-handlebars')
-const path = require('path')
+import "dotenv/config"
+import express from "express"
+import multer from "multer"
+import nodemailer from "nodemailer"
+import cors from 'cors'
+import hbs from "nodemailer-express-handlebars"
+import path from "path"
 
 const app = express()
 app.use(cors())
